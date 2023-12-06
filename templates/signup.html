@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="/signupuser" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="/user/signin">Login</a></p>
+</body>
+</html>
